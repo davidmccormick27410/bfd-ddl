@@ -1,0 +1,20 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [Lodestar].[CUSTOMER](
+	[UIDCUSTOMER] [numeric](19, 0) NULL,
+	[CUSTOMERID] [varchar](64) NULL,
+	[NAME] [varchar](64) NULL,
+	[SUMMARYBILL] [char](1) NULL,
+	[UIDACCTMGRDIR] [numeric](19, 0) NULL,
+	[UIDCONTACTDIR] [numeric](19, 0) NULL,
+	[ACCTMGRFAXFLAG] [char](1) NULL,
+	[CONTACTFAXFLAG] [char](1) NULL,
+	[CREDITSCORE] [numeric](10, 0) NULL,
+	[OWNER] [varchar](64) NULL,
+	[LSUSER] [varchar](64) NULL,
+	[LSTIME] [date] NULL,
+	[UIDCUSTOMERCLASS] [numeric](19, 0) NULL
+) ON [PRIMARY]
+GO

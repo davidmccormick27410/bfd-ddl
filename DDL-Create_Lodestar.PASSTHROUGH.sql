@@ -1,0 +1,23 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [Lodestar].[PASSTHROUGH](
+	[PASSTHROUGHNUM] [numeric](19, 0) NULL,
+	[UIDSVCPROVIDER] [numeric](19, 0) NULL,
+	[UIDACCOUNT] [numeric](19, 0) NULL,
+	[UIDMETER] [numeric](19, 0) NULL,
+	[STOPREADING] [numeric](10, 0) NULL,
+	[DEMAND] [numeric](10, 0) NULL,
+	[CHARGES] [float] NULL,
+	[LSUSER] [varchar](64) NULL,
+	[LSTIME] [date] NULL,
+	[ONETIMECHARGE] [char](1) NULL,
+	[BILLMONTH] [numeric](5, 0) NULL,
+	[APPLIEDON] [date] NULL,
+	[SERVICETYPECODE] [varchar](64) NULL,
+	[DESCRIPTION] [varchar](64) NULL,
+	[STOPREADINGTIME] [date] NULL,
+	[CONSUMPTION] [numeric](19, 0) NULL
+) ON [PRIMARY]
+GO

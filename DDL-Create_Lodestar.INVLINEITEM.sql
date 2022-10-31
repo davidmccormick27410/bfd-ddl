@@ -1,0 +1,25 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [Lodestar].[INVLINEITEM](
+	[INVLINEITEMNUM] [numeric](19, 0) NULL,
+	[UIDINVOICE] [numeric](19, 0) NULL,
+	[METERID] [varchar](64) NULL,
+	[SERVICETYPE] [varchar](64) NULL,
+	[METERREADSTART] [date] NULL,
+	[METERREADSTOP] [date] NULL,
+	[DESCRIPTION] [varchar](64) NULL,
+	[STARTMETERREAD] [float] NULL,
+	[STOPMETERREAD] [float] NULL,
+	[METERMULTIPLIER] [float] NULL,
+	[USAGE] [numeric](10, 0) NULL,
+	[ELECTRICBLOCK] [numeric](10, 0) NULL,
+	[UNITSCHARGED] [numeric](10, 0) NULL,
+	[USAGEPERCENTAGE] [float] NULL,
+	[RATE] [float] NULL,
+	[AMOUNT] [float] NULL,
+	[LSUSER] [varchar](64) NULL,
+	[LSTIME] [date] NULL
+) ON [PRIMARY]
+GO
