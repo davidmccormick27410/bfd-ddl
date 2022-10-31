@@ -1,0 +1,25 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [Lodestar].[BILLHISTORY](
+	[UIDBILLHISTORY] [numeric](19, 0) NULL,
+	[UIDACCOUNT] [numeric](19, 0) NULL,
+	[STARTTIME] [date] NULL,
+	[STOPTIME] [date] NULL,
+	[BILLMONTH] [numeric](5, 0) NULL,
+	[BILLTIME] [date] NULL,
+	[READDATE] [date] NULL,
+	[USERSPECIFIEDSTOP] [char](1) NULL,
+	[KWH] [float] NULL,
+	[UIDBILLCODE] [numeric](5, 0) NULL,
+	[PROFILESTATUSFLAG] [char](1) NULL,
+	[LSUSER] [varchar](64) NULL,
+	[LSTIME] [date] NULL,
+	[REBILLREASONCODE] [varchar](64) NULL,
+	[CUSTOMERID] [varchar](64) NULL,
+	[ACCOUNTCLASSCODE] [varchar](64) NULL,
+	[FRSNUM] [varchar](64) NULL,
+	[SQFOOTAGE] [float] NULL
+) ON [PRIMARY]
+GO
