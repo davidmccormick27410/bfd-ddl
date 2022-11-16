@@ -4,8 +4,8 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[DimLocation](
 	[ID] [int] NOT NULL IDENTITY(1,1),
-	[SPOTSID] [int] NULL,
-	[FormalName] [nchar](10) NULL,
+	[SPOTSID] [nvarchar] (20) NULL,
+	[FormalName] [nchar](75) NULL,
 	[GrossAreaSQFT] [int] NULL,
 	[Status] [char](1) NULL,
 	[MMID] [nvarchar](30) NULL,
