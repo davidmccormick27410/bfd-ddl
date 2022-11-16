@@ -3,7 +3,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[DimReadingType](
-	[ID] [int] NOT NULL,
+	[ID] [int] NOT NULL IDENTITY(1,1),
 	[Value] [char](1) NOT NULL,
 	[Description] [nvarchar](30) NOT NULL,
  CONSTRAINT [PK_DimReadingType] PRIMARY KEY CLUSTERED 

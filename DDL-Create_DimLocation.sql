@@ -3,7 +3,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[DimLocation](
-	[ID] [int] NOT NULL,
+	[ID] [int] NOT NULL IDENTITY(1,1),
 	[SPOTSID] [int] NULL,
 	[FormalName] [nchar](10) NULL,
 	[GrossAreaSQFT] [int] NULL,
