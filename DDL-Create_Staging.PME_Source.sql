@@ -5,6 +5,7 @@ GO
 CREATE TABLE [Staging].[PME_Source](
 	[ID] [int] NOT NULL,
 	[Name] [nvarchar](255) NOT NULL,
-	[Signature] [nvarchar](200) NULL
+	[Signature] [nvarchar](200) NULL,
+	[MeterID] [nvarchar] (25) NULL
 ) ON [PRIMARY]
 GO
