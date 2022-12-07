@@ -3,7 +3,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[DimElectricMeter](
-	[ID] [int] NOT NULL,
+	[ID] [int] NOT NULL IDENTITY(1,1) ,
 	[MMNaturalKey] [nvarchar](50) NOT NULL,
 	[MMMeterID] [nvarchar](30) NOT NULL,
 	[Location] [int] NOT NULL,
