@@ -8,7 +8,7 @@ CREATE TABLE [dbo].[DimElectricMeter](
 	[MMMeterID] [nvarchar](30) NOT NULL,
 	[Location] [int] NOT NULL,
 	[Status] [int] NOT NULL,
-	[ReadingType] [int] NOT NULL,
+	[ReadingType] [int] ,
 	[MMSN] [nvarchar](200) NULL,
 	[BillingNaturalKey] [bigint] NOT NULL,
 	[BillingLSMeterID] [nvarchar](30) NOT NULL,
